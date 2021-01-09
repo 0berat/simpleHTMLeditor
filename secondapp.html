@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-3.5.1.min.js"></script>
+    <script>
+        $(document).ready(function (){
+$(".ekleBtn").click(function () {
+
+    var data = $(".inputt").val();
+    $(".kutu").append(data);
+})
+            $(".ekleBtn2").click(function () {
+
+                var data2 = $(".inputt2").val();
+                $(".kutu2").append(data2);
+            })
+
+        })
+    </script>
+    <style>
+        .kutu{width: 220px;
+            height:200px;
+            border: 1px solid #555;}
+
+
+
+        .kutu2{width: 800px;
+            height:500px;
+            border: 1px solid #555;}
+    </style>
+</head>
+<body>
+<input class="inputt" type="text">
+
+<button class="ekleBtn">ekle</button>
+
+
+<div class="kutu"></div>
+<hr>
+
+<h1>HTML EDİTOR</h1>
+<input class="inputt2" type="text">
+<button class="ekleBtn2">ekle</button>
+<div class="kutu2"></div>
+
+</body>
+</html>
